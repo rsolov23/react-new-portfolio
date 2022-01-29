@@ -34,7 +34,7 @@ export function NavBar() {
             <chakra.a href="/" title="Nav" display="flex" alignItems="center">
               <VisuallyHidden>&lt; Rachel Solov /&gt;</VisuallyHidden>
             </chakra.a>
-            <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
+            <chakra.h1 fontSize="2xl" fontWeight="medium" ml="2" id="logo">
               &lt; Rachel Solov /&gt;
             </chakra.h1>
           </Flex>

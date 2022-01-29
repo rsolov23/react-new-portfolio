@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+}
 /* particle background */
 #tsparticles {
   z-index: -1;
@@ -23,4 +27,11 @@
 #no-scroll {
   overflow: hidden;
   height: 100vh;
+}
+
+/* logo */
+@import url("http://fonts.cdnfonts.com/css/agustina");
+#logo {
+  font-family: "Agustina", sans-serif;
+  font: size 24px;
 }
