@@ -32,8 +32,9 @@
 /* logo */
 @import url("http://fonts.cdnfonts.com/css/agustina");
 #logo {
+  color: #6d00b7;
+  text-shadow: 1px 1px 2px  #00759f, 0 0 1em #05008d, 0 0 0.2em #05008d;
   font-family: "Agustina", sans-serif;
-  font: size 24px;
 }
 
 /* wave */
