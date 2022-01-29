@@ -55,9 +55,7 @@ export function NavBar() {
                 Resume
               </Link>
             </HStack>
-            <Button colorScheme="brand" size="sm">
-              Get Started
-            </Button>
+
             <Box display={{ base: "inline-flex", md: "none" }}>
               <IconButton
                 display={{ base: "flex", md: "none" }}

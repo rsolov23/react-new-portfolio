@@ -4,7 +4,7 @@ import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
 import ParticleBackground from "./pages/Particle";
 import Preloader from "./pages/Pre";
-// import Resume from "./components/Resume";
+import About from "./components/About";
 import "./App.css";
 
 
@@ -24,7 +24,7 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <ParticleBackground />
         <NavBar />
-        {/* <Resume /> */}
+     <About />
         <Footer />
       </div>
     </ChakraProvider>
