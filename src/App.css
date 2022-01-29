@@ -71,3 +71,25 @@
     transform: rotate(0deg);
   }
 }
+
+/* typewriter */
+.Typewriter__wrapper {
+  font-size: 2.2em;
+  color: #6d00b7;
+  font-weight: 600;
+}
+.Typewriter__cursor {
+  font-size: 2.4em;
+  color: #6d00b7;
+}
+
+@media (max-width: 767px) {
+  .Typewriter__wrapper {
+    font-size: 1.4em;
+    font-weight: 500;
+    position: absolute;
+  }
+  .Typewriter__cursor {
+    display: none;
+  }
+}

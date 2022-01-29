@@ -8,7 +8,10 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import about from "../assets/images/about.svg";
+import Type from "../pages/Type";
+
 export default function About() {
+
   return (
     <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
       <Flex p={8} flex={1} align={"center"} justify={"center"}>
@@ -35,6 +38,8 @@ export default function About() {
               I'm Rachel Solov
             </Text>{" "}
           </Heading>
+          <Type />
+          <Text className="word"></Text>
           {/* <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
             The project board is an exclusive resource for contract work. It's
             perfect for freelancers, agencies, and moonlighters.
