@@ -33,7 +33,7 @@
 @import url("http://fonts.cdnfonts.com/css/agustina");
 #logo {
   color: #6d00b7;
-  text-shadow: 1px 1px 2px  #00759f, 0 0 1em #05008d, 0 0 0.2em #05008d;
+  text-shadow: 1px 1px 2px #00759f, 0 0 1em #05008d, 0 0 0.2em #05008d;
   font-family: "Agustina", sans-serif;
 }
 
@@ -137,12 +137,14 @@ article {
 }
 
 .card {
+  -webkit-box-shadow: 1px 1px 15px 5px #614a9f;
+  box-shadow: 1px 1px 15px 5px #614a9f;
   position: absolute;
   height: 25rem;
   width: 15rem;
   margin: 1rem;
-  color: #15265c;
-  background-color: #6d00b7;
+  color: #fff;
+  /* background-color: #6d00b7; */
   border-radius: 1rem;
   text-align: center;
   text-transform: capitalize;
@@ -157,7 +159,8 @@ article {
 .card img {
   height: 13rem;
   width: 15rem;
-  border-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   object-fit: cover;
   object-position: top;
   pointer-events: none;
@@ -212,14 +215,14 @@ article {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color:#6d00b7;
+  background-color: #6d00b7;
 }
 
 .dot {
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  background-color:#6d00b7;
+  background-color: #6d00b7;
   z-index: 1;
   transition: all 1s;
 }
@@ -256,4 +259,49 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bn30 {
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: white;
+}
+
+.bn30 .text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+}
+
+.bn30:after {
+  content: "";
+  border-radius: 10px;
+  position: absolute;
+  margin: 4px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #212529;
+}
+
+.bn30:hover {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+}
+
+.bn30:hover .text {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
 }

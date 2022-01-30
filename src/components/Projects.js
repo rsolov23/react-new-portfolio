@@ -8,7 +8,6 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-
 function Projects() {
   const [index, setIndex] = useState(0);
 

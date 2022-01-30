@@ -2,7 +2,6 @@ import * as FaIcons from "react-icons/fa";
 const Card = ({
   handlePointerEvent,
   title,
-
   img,
   skills,
   github,
@@ -23,15 +22,13 @@ const Card = ({
           <p className="skills">{skills}</p>
           <p className="summary">{summary}</p>
 
-          <div>
-            <button>
-              <span>
-                <i className="fa fa-github btn">View Code</i>
-              </span>
-            </button>
-            <button>
-              <i className="fas fa-external-link-square-alt">View App</i>
-            </button>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <a href={github} target="blank">
+              <button class="bn30">View Code</button>
+            </a>
+            <a href={deployed} target="blank">
+              <button class="bn30">Live App</button>
+            </a>
             {/* <a href={github} target="blank" className="github"> */}
             {/* <FaIcons.FaGithubSquare size={50} color="#000" /> */}
             {/* </a> */}
