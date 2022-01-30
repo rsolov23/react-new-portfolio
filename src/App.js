@@ -5,8 +5,8 @@ import Footer from "./components/Footer";
 import ParticleBackground from "./pages/Particle";
 import Preloader from "./pages/Pre";
 import About from "./components/About";
+import Projects from "./components/Projects";
 import "./App.css";
-
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -24,7 +24,8 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <ParticleBackground />
         <NavBar />
-     <About />
+        <About />
+        <Projects />
         <Footer />
       </div>
     </ChakraProvider>
