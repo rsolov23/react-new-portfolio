@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import {
   chakra,
   Box,
@@ -12,7 +12,7 @@ import {
   VStack,
   IconButton,
   CloseButton,
-  Link,
+  // Link,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
 

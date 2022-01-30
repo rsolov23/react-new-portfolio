@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { BrowserRouter, Switch, Routes, Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
@@ -20,14 +21,18 @@ function App() {
   }, []);
   return (
     <ChakraProvider>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <ParticleBackground />
-        <NavBar />
-        <About />
-        <Projects />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <Preloader load={load} />
+        <div className="App" id={load ? "no-scroll" : "scroll"}>
+          <ParticleBackground />
+          <NavBar />
+          <Routes>
+            <Route path="about" element={<About />} />
+            <Route path="projects" element={<Projects />} />
+          </Routes>
+          <Footer />
+        </div>
+      </BrowserRouter>
     </ChakraProvider>
   );
 }
