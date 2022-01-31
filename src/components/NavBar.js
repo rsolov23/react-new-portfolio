@@ -4,6 +4,7 @@ import {
   chakra,
   Box,
   Flex,
+  Text,
   useColorModeValue,
   VisuallyHidden,
   HStack,
@@ -31,12 +32,17 @@ export function NavBar() {
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <Flex>
-            <chakra.a href="/" title="Nav" display="flex" alignItems="center">
+            <chakra.a
+              href="/about"
+              title="Nav"
+              display="flex"
+              alignItems="center"
+            >
               <VisuallyHidden>&lt; Rachel Solov /&gt;</VisuallyHidden>
             </chakra.a>
-            <chakra.h1 fontSize="2xl" fontWeight="medium" ml="2" id="logo">
+            <Link ml="2" id="logo" to="/about">
               &lt; Rachel Solov /&gt;
-            </chakra.h1>
+            </Link>
           </Flex>
           <HStack display="flex" alignItems="center" spacing={1}>
             <HStack
@@ -45,14 +51,21 @@ export function NavBar() {
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <Link to="/about" p={5}>
-                About
+              <Link to="/about" spacing="8">
+                <Text m={5} fontSize="1.5rem" className="navlinks hover-underline-animation">
+                  About
+                </Text>
               </Link>
-              <Link to="/projects" p={5}>
-                Projects
+              <Link to="/projects" spacing="8">
+                <Text m={5} fontSize="1.5rem" className="navlinks hover-underline-animation">
+                  Projects
+                </Text>
               </Link>
-              <Link to="/resume" p={5}>
-                Resume
+              <Link to="/resume" spacing="8">
+                <Text m={5} fontSize="1.5rem" className="navlinks hover-underline-animation">
+                  {" "}
+                  Resume
+                </Text>
               </Link>
             </HStack>
 

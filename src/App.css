@@ -35,8 +35,34 @@
   color: #6d00b7;
   text-shadow: 1px 1px 2px #00759f, 0 0 1em #05008d, 0 0 0.2em #05008d;
   font-family: "Agustina", sans-serif;
+  font-size: 2rem;
 }
-
+/* nav */
+.navlinks:hover {
+  color: #6d00b7;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+}
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6d00b7;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 /* wave */
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
