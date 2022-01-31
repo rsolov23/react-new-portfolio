@@ -1,7 +1,7 @@
 import { ButtonGroup, IconButton } from "@chakra-ui/react";
 import * as React from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {HiOutlineMail} from "react-icons/hi"
 export const SocialMediaLinks = (props) => (
   <ButtonGroup variant="ghost" color="gray.600" {...props}>
     <IconButton
@@ -20,7 +20,7 @@ export const SocialMediaLinks = (props) => (
       as="a"
       href="#"
       aria-label="Twitter"
-      icon={<FaTwitter fontSize="20px" />}
+      icon={<HiOutlineMail fontSize="20px" />}
     />
   </ButtonGroup>
 );
