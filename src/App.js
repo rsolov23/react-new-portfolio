@@ -5,8 +5,9 @@ import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
 import ParticleBackground from "./pages/Particle";
 import Preloader from "./pages/Pre";
-import About from "./components/About";
+import Header from "./components/Header";
 import Projects from "./components/Projects";
+import About from "./components/About";
 import "./App.css";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <ParticleBackground />
           <NavBar />
           <Routes>
+            <Route path="header" element={<Header />} />
             <Route path="about" element={<About />} />
             <Route path="projects" element={<Projects />} />
           </Routes>
