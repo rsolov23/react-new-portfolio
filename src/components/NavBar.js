@@ -40,7 +40,7 @@ export function NavBar() {
             >
               <VisuallyHidden>&lt; Rachel Solov /&gt;</VisuallyHidden>
             </chakra.a>
-            <Link ml="2" id="logo" to="/about">
+            <Link ml="2" id="logo" to="/header">
               &lt; Rachel Solov /&gt;
             </Link>
           </Flex>
@@ -52,17 +52,29 @@ export function NavBar() {
               display={{ base: "none", md: "inline-flex" }}
             >
               <Link to="/about" spacing="8">
-                <Text m={5} fontSize="1.5rem" className="navlinks hover-underline-animation">
+                <Text
+                  m={5}
+                  fontSize="1.5rem"
+                  className="navlinks hover-underline-animation"
+                >
                   About
                 </Text>
               </Link>
               <Link to="/projects" spacing="8">
-                <Text m={5} fontSize="1.5rem" className="navlinks hover-underline-animation">
+                <Text
+                  m={5}
+                  fontSize="1.5rem"
+                  className="navlinks hover-underline-animation"
+                >
                   Projects
                 </Text>
               </Link>
               <Link to="/resume" spacing="8">
-                <Text m={5} fontSize="1.5rem" className="navlinks hover-underline-animation">
+                <Text
+                  m={5}
+                  fontSize="1.5rem"
+                  className="navlinks hover-underline-animation"
+                >
                   {" "}
                   Resume
                 </Text>
