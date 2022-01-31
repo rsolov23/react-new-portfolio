@@ -331,3 +331,9 @@ button {
 .bn30:hover .text {
   background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
 }
+
+/* tools */
+#tools {
+  border-radius: 15px;
+  box-shadow: 0 0 10px #6d00b7;
+}
