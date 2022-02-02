@@ -2,6 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import { Box, Flex, Stack, chakra } from "@chakra-ui/react";
 import Skills from "../pages/Skills";
+import Github from "../pages/Github";
 export default function About() {
   return (
     <>
@@ -44,6 +45,7 @@ export default function About() {
         </Flex>
       </Box>
       <Skills />
+      <Github />
     </>
   );
 }

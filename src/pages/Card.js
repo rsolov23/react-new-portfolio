@@ -10,7 +10,7 @@ const Card = ({
   cardStyle,
 }) => {
   return (
-    <article className={cardStyle}>
+    <article className={cardStyle} id="article">
       <div
         className="card"
         onMouseDown={handlePointerEvent}
