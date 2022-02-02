@@ -147,7 +147,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 3rem;
-  color: var(--main-color);
+  /* color: var(--main-color); */
 }
 
 .card-container svg:hover {
@@ -155,7 +155,7 @@
   color: #15265c;
 }
 
-article {
+#article {
   position: absolute;
   width: 16rem;
   height: 100%;
