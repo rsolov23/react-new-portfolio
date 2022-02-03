@@ -1,5 +1,4 @@
 import React from "react";
-// import { FooterStyle } from "../../styles/FooterStyles";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { AiOutlineMail } from "react-icons/ai";
 import { Box, Stack, StackDivider } from "@chakra-ui/react";
