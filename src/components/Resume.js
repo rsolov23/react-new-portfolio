@@ -14,31 +14,33 @@ export default function Test() {
   // });
 
   /*When document gets loaded successfully*/
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-    setPageNumber(1);
-  }
+  // function onDocumentLoadSuccess({ numPages }) {
+  //   setNumPages(numPages);
+  //   setPageNumber(1);
+  // }
 
-  function changePage(offset) {
-    setPageNumber((prevPageNumber) => prevPageNumber + offset);
-  }
+  // function changePage(offset) {
+  //   setPageNumber((prevPageNumber) => prevPageNumber + offset);
+  // }
 
-  function previousPage() {
-    changePage(-1);
-  }
+  // function previousPage() {
+  //   changePage(-1);
+  // }
 
-  function nextPage() {
-    changePage(1);
-  }
+  // function nextPage() {
+  //   changePage(1);
+  // }
 
   return (
     <Box>
       <Flex justifyContent="center">
         <div className="main">
-          <Document file={url} onLoadSuccess={onDocumentLoadSuccess}>
+          <Document file={url} 
+          // onLoadSuccess={onDocumentLoadSuccess}
+          >
             <Page pageNumber={pageNumber} />
           </Document>
-          <div>
+          {/* <div>
             <div className="pagec">
               Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
             </div>
@@ -46,7 +48,7 @@ export default function Test() {
               <button
                 type="button"
                 disabled={pageNumber <= 1}
-                onClick={previousPage}
+                // onClick={previousPage}
                 className="Pre"
               >
                 Previous
@@ -54,12 +56,12 @@ export default function Test() {
               <button
                 type="button"
                 disabled={pageNumber >= numPages}
-                onClick={nextPage}
+                // onClick={nextPage}
               >
                 Next
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </Flex>
     </Box>
