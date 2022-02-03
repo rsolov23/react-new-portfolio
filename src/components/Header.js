@@ -17,6 +17,7 @@ export default function Header() {
         <Stack spacing={6} w={"full"} maxW={"lg"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text
+              color={"#fff"}
               as={"span"}
               position={"relative"}
               _after={{
@@ -26,7 +27,6 @@ export default function Header() {
                 position: "absolute",
                 bottom: 1,
                 left: 0,
-                bg: "#6d00b7",
                 zIndex: -1,
               }}
             >

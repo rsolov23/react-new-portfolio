@@ -24,10 +24,10 @@ const Card = ({
 
           <div style={{ display: "flex", justifyContent: "center" }}>
             <a href={github} target="blank">
-              <button class="bn30">View Code</button>
+              <button className="bn30">View Code</button>
             </a>
             <a href={deployed} target="blank">
-              <button class="bn30">Live App</button>
+              <button className="bn30">Live App</button>
             </a>
             {/* <a href={github} target="blank" className="github"> */}
             {/* <FaIcons.FaGithubSquare size={50} color="#000" /> */}

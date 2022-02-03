@@ -13,6 +13,7 @@ export default function About() {
           fontWeight="bold"
           fontSize="2.5rem"
           mb={5}
+      
         >
           Tools I Use
         </chakra.h1>
