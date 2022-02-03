@@ -147,12 +147,12 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 3rem;
-  /* color: var(--main-color); */
+  color: #6d00b7;
 }
 
 .card-container svg:hover {
   cursor: pointer;
-  color: #15265c;
+  color: #fff;
 }
 
 #article {

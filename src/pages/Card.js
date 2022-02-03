@@ -22,19 +22,19 @@ const Card = ({
           <p className="skills">{skills}</p>
           <p className="summary">{summary}</p>
 
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              marginTop: "2rem",
+            }}
+          >
             <a href={github} target="blank">
               <button className="bn30">View Code</button>
             </a>
             <a href={deployed} target="blank">
               <button className="bn30">Live App</button>
             </a>
-            {/* <a href={github} target="blank" className="github"> */}
-            {/* <FaIcons.FaGithubSquare size={50} color="#000" /> */}
-            {/* </a> */}
-            {/* <a href={deployed} className="projectItem__deployed" target="blank"> */}
-            {/* <FaIcons.FaExternalLinkSquareAlt size={50} color="#000" /> */}
-            {/* </a> */}
           </div>
         </div>
       </div>
