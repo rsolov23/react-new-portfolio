@@ -3,14 +3,14 @@ import GitHubCalendar from "react-github-calendar";
 import { Box, Flex, chakra } from "@chakra-ui/react";
 
 function Github() {
-  const colourTheme = {
+  const colorTheme = {
     background: "transparent",
-    text: "#6d00b7",
-    grade4: "#2c1666",
-    grade3: "#6d00b7",
-    grade2: "#7d94e8",
-    grade1: "#1268ac",
-    grade0: "#c8d9bb",
+    text: "#ffffff",
+    grade4: "#8400b8",
+    grade3: "#b22ff4",
+    grade2: "#b265f6",
+    grade1: "#c084f5",
+    grade0: "#ecd9fc",
   };
   return (
     <Box p={5} m={10} borderRadius="md" id="tools">
@@ -28,7 +28,7 @@ function Github() {
           username="rsolov23"
           blockSize={15}
           blockMargin={5}
-          theme={colourTheme}
+        //   theme={colorTheme}
           fontSize={16}
         />
       </Flex>
