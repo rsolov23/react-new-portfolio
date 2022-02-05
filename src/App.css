@@ -341,10 +341,10 @@ button {
 /* 
 resume */
 
-.resume {
+object {
   border-radius: 10px;
   box-shadow: 0 0 10px #6d00b7;
-  margin-top: 2.5rem;
+  opacity: 85%;
 }
 
 .pdf {
