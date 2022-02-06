@@ -8,7 +8,7 @@ import {
   Icon,
   IconProps,
 } from "@chakra-ui/react";
-
+import Avatar from "avataaars";
 export default function Bio() {
   return (
     <Container maxW={"5xl"}>
@@ -39,21 +39,21 @@ export default function Bio() {
           officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
           nesciunt ipsum debitis quas aliquid. Reprehenderit, quia.
         </Text>
-        <Flex w={"full"}>
-          {/* <Avatar
-  avatarStyle='Circle'
-  topType='LongHairStraight'
-  accessoriesType='Prescription02'
-  hairColor='Brown'
-  facialHairType='Blank'
-  clotheType='ShirtVNeck'
-  clotheColor='Blue03'
-  eyeType='Happy'
-  eyebrowType='RaisedExcitedNatural'
-  mouthType='Smile'
-  skinColor='Light'
-/> */}
-        </Flex>
+        <Stack w={"full"}  align={"center"}>
+          <Avatar
+            avatarStyle="Circle"
+            topType="LongHairStraight"
+            accessoriesType="Prescription02"
+            hairColor="Brown"
+            facialHairType="Blank"
+            clotheType="ShirtVNeck"
+            clotheColor="Blue03"
+            eyeType="Happy"
+            eyebrowType="RaisedExcitedNatural"
+            mouthType="Smile"
+            skinColor="Light"
+          />
+        </Stack>
       </Stack>
     </Container>
   );
