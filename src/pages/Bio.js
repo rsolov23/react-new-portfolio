@@ -39,7 +39,7 @@ export default function Bio() {
           officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
           nesciunt ipsum debitis quas aliquid. Reprehenderit, quia.
         </Text>
-        <Stack w={"full"}  align={"center"}>
+        <Stack w={"full"} align={"center"}>
           <Avatar
             avatarStyle="Circle"
             topType="LongHairStraight"
@@ -54,6 +54,9 @@ export default function Bio() {
             skinColor="Light"
           />
         </Stack>
+        <a href="/" target="blank">
+          <button className="bn30">Hire Me!</button>
+        </a>
       </Stack>
     </Container>
   );
