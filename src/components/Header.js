@@ -6,12 +6,15 @@ import {
   Stack,
   Text,
   useBreakpointValue,
+  IconButton,
 } from "@chakra-ui/react";
+import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 import about from "../assets/images/about.svg";
 import Type from "../pages/Type";
-
+import Bio from "../pages/Bio";
 export default function Header() {
   return (
+    <>
     <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
       <Flex p={8} flex={1} align={"center"} justify={"center"}>
         <Stack spacing={6} w={"full"} maxW={"lg"}>
@@ -33,34 +36,33 @@ export default function Header() {
               Hello<span className="wave">👋 </span>,
             </Text>
             <br />{" "}
-            <Text color={"#6d00b7"} as={"span"}>
+            <Text color={"#6d00b7"} as={"span"} className="anchor">
               I'm Rachel Solov
             </Text>{" "}
           </Heading>
           <Type />
           <Text className="word"></Text>
-          {/* <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
-            The project board is an exclusive resource for contract work. It's
-            perfect for freelancers, agencies, and moonlighters.
-          </Text> */}
-          <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-            {/* <Button
-              rounded={"full"}
-              bg={"blue.400"}
-              color={"white"}
-              _hover={{
-                bg: "blue.500",
-              }}
-            >
-              Create Project
-            </Button>
-            <Button rounded={"full"}>How It Works</Button> */}
-          </Stack>
+          <Stack direction={{ base: "column", md: "row" }} spacing={4}></Stack>
         </Stack>
       </Flex>
       <Flex flex={1}>
         <Image alt={"Login Image"} objectFit={"fill"} src={about} />
       </Flex>
+
+      {/* <div id="down-arrow">
+        <span>
+          <a href="#about">
+            <IconButton
+              as="a"
+              aria-label="LinkedIn"
+              icon={<HiOutlineChevronDoubleDown fontSize="20px" color="#fff" />}
+            />
+          </a>
+        </span>
+      </div> */}
+ 
     </Stack>
+    <Bio />
+    </>
   );
 }

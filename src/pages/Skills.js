@@ -47,7 +47,6 @@ export default function Skills() {
             height="75"
           />
           <Icon
-            color="red"
             className="test express"
             icon="logos:express"
             width="75"

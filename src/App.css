@@ -338,6 +338,11 @@ button {
   box-shadow: 0 0 10px #6d00b7;
   color: #fff;
 }
+.express {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
 /* 
 resume */
 
@@ -350,3 +355,5 @@ object {
 .pdf {
   color: #fff;
 }
+
+/* arrow in header */
