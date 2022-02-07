@@ -1,5 +1,6 @@
 import {
   Flex,
+  Image,
   Container,
   Heading,
   Stack,
@@ -8,7 +9,7 @@ import {
   Icon,
   IconProps,
 } from "@chakra-ui/react";
-import Avatar from "avataaars";
+import avatar from "../assets/images/avatar.svg";
 export default function Bio() {
   return (
     <Container maxW={"5xl"}>
@@ -40,21 +41,9 @@ export default function Bio() {
           nesciunt ipsum debitis quas aliquid. Reprehenderit, quia.
         </Text>
         <Stack w={"full"} align={"center"}>
-          <Avatar
-            avatarStyle="Circle"
-            topType="LongHairStraight"
-            accessoriesType="Prescription02"
-            hairColor="Brown"
-            facialHairType="Blank"
-            clotheType="ShirtVNeck"
-            clotheColor="Blue03"
-            eyeType="Happy"
-            eyebrowType="RaisedExcitedNatural"
-            mouthType="Smile"
-            skinColor="Light"
-          />
+          <Image alt={"avatar"} objectFit={"fill"} src={avatar} />
         </Stack>
-        <a href="/" target="blank">
+        <a href="/contact" target="blank">
           <button className="bn30">Hire Me!</button>
         </a>
       </Stack>
