@@ -39,9 +39,15 @@ function NavBar() {
             >
               <VisuallyHidden>&lt; Rachel Solov /&gt;</VisuallyHidden>
             </chakra.a>
-            <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
+            <chakra.a
+              fontSize="xl"
+              fontWeight="medium"
+              ml="2"
+              id="logo"
+              href="/header"
+            >
               &lt; Rachel Solov /&gt;
-            </chakra.h1>
+            </chakra.a>
           </Flex>
           <HStack display="flex" alignItems="center" spacing={1}>
             <HStack
@@ -122,12 +128,6 @@ function NavBar() {
                 <Button w="full" variant="ghost">
                   <Link href="/resume">Resume</Link>
                 </Button>
-                {/* <Button w="full" variant="ghost">
-                  Company
-                </Button>
-                <Button w="full" variant="ghost">
-                  Sign in
-                </Button> */}
               </VStack>
             </Box>
           </HStack>
@@ -151,11 +151,10 @@ export default NavBar;
 //   VStack,
 //   IconButton,
 //   CloseButton,
-//   Link,
 // } from "@chakra-ui/react";
 // import { AiOutlineMenu } from "react-icons/ai";
 
-// export function NavBar() {
+// function NavBar() {
 //   const mobileNav = useDisclosure();
 
 //   return (
@@ -253,3 +252,4 @@ export default NavBar;
 //     </React.Fragment>
 //   );
 // }
+// export default NavBar;
