@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Flex,
   Image,
@@ -10,6 +11,8 @@ import {
   IconProps,
 } from "@chakra-ui/react";
 import avatar from "../assets/images/avatar.svg";
+import ScrollToTop from "./ScrollToTop";
+
 export default function Bio() {
   return (
     <Container maxW={"5xl"}>
@@ -20,6 +23,7 @@ export default function Bio() {
         py={{ base: 20, md: 28 }}
       >
         <Heading
+          id="bio"
           color={"#FFF"}
           fontWeight={600}
           fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
@@ -35,10 +39,6 @@ export default function Bio() {
           mollitia, molestiae quas vel sint commodi repudiandae consequuntur
           voluptatum laborum numquam blanditiis harum quisquam eius sed odit
           fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-          accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-          molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
-          officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
-          nesciunt ipsum debitis quas aliquid. Reprehenderit, quia.
         </Text>
         <Stack w={"full"} align={"center"}>
           <Image alt={"avatar"} objectFit={"fill"} src={avatar} />
@@ -46,6 +46,7 @@ export default function Bio() {
         <a href="/contact" target="blank">
           <button className="bn30">Hire Me!</button>
         </a>
+        <ScrollToTop />
       </Stack>
     </Container>
   );
