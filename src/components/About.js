@@ -13,7 +13,6 @@ export default function About() {
           fontWeight="bold"
           fontSize="2.5rem"
           mb={5}
-      
         >
           Tools I Use
         </chakra.h1>
@@ -42,7 +41,18 @@ export default function About() {
             width="75"
             height="75"
           />
-          <Icon className="test" icon="logos:git" width="75" height="75" />
+          <Icon
+            className="test"
+            icon="flat-color-icons:google"
+            width="75"
+            height="75"
+          />
+          <Icon
+            className="test"
+            icon="logos:bash-icon"
+            width="75"
+            height="75"
+          />
         </Flex>
       </Box>
       <Skills />

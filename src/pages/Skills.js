@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import { Box, Flex, chakra } from "@chakra-ui/react";
+import { Box, Flex, chakra, Text } from "@chakra-ui/react";
 
 export default function Skills() {
   return (
@@ -16,12 +16,23 @@ export default function Skills() {
           Profesional Skillset
         </chakra.h1>
         <Flex display="flex" justifyContent="space-evenly" mb={5}>
+          <Icon className="test" icon="logos:mongodb" width="75" height="75" />
+          <Icon
+            icon="simple-icons:express"
+            color="white"
+            className="test"
+            width="75"
+            height="75"
+          />
+          <Icon className="test" icon="logos:react" width="75" height="75" />
+          <Icon className="test" icon="logos:nodejs" width="75" height="75" />
           <Icon
             className="test"
             icon="vscode-icons:file-type-html"
             width="75"
             height="75"
           />
+
           <Icon
             className="test"
             icon="vscode-icons:file-type-css"
@@ -36,40 +47,24 @@ export default function Skills() {
           />
           <Icon
             className="test"
-            icon="logos:bash-icon"
+            icon="dashicons:rest-api"
+            color="purple"
             width="75"
             height="75"
           />
+
           <Icon
             className="test"
             icon="logos:bootstrap"
             width="75"
             height="75"
           />
-          <Icon
-            className="test express"
-            icon="logos:express"
-            width="75"
-            height="75"
-          />
-          <Icon
-            className="test"
-            icon="flat-color-icons:google"
-            width="75"
-            height="75"
-          />
-          <Icon className="test" icon="logos:graphql" width="75" height="75" />
-          <Icon
-            className="test"
-            icon="logos:handlebars"
-            width="75"
-            height="75"
-          />
-          <Icon className="test" icon="logos:jest" width="75" height="75" />
+          <Icon className="test" icon="logos:markdown" width="75" height="75" />
         </Flex>
         <Flex display="flex" justifyContent="space-evenly" mb={5}>
           <Icon className="test" icon="logos:jquery" width="75" height="75" />
-          <Icon className="test" icon="logos:markdown" width="75" height="75" />
+
+          <Icon className="test" icon="logos:jest" width="75" height="75" />
           <Icon
             className="test"
             icon="logos:material-ui"
@@ -77,9 +72,13 @@ export default function Skills() {
             height="75"
           />
           <Icon className="test" icon="logos:mysql" width="75" height="75" />
-
-          <Icon className="test" icon="logos:mongodb" width="75" height="75" />
-          <Icon className="test" icon="logos:nodejs" width="75" height="75" />
+          <Icon className="test" icon="logos:graphql" width="75" height="75" />
+          <Icon
+            className="test"
+            icon="logos:handlebars"
+            width="75"
+            height="75"
+          />
           <Icon
             className="test"
             icon="vscode-icons:file-type-npm"
