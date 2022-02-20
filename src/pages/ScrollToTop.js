@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useWindowScroll } from "react-use";
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { IoIosArrowUp } from "react-icons/io";
 const ScrollToTop = () => {
   const { y: pageYOffset } = useWindowScroll();
   const [visible, setVisiblity] = useState(false);
@@ -24,7 +24,7 @@ const ScrollToTop = () => {
       className="scroll-to-top cursor-pointer text-center"
       onClick={scrollToTop}
     >
-      <BsFillArrowUpCircleFill className="bounce up-arrow" />
+      <IoIosArrowUp className="bounce up-arrow" size="50px" />
     </div>
   );
 };
