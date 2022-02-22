@@ -29,7 +29,7 @@ function App() {
         <div className="App" id={load ? "no-scroll" : "scroll"}>
           <ParticleBackground />
           <NavBar />
-          <Route path="/header" component={Header} />
+          <Route path="/" component={Header} />
           <div>
             <Route path="/about" component={About} />
             <Route path="/projects" component={Projects} />
