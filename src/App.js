@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-// import ParticleBackground from "./pages/Particle";
+import ParticleBackground from "./pages/Particle";
 import Preloader from "./pages/Pre";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
@@ -27,7 +27,7 @@ function App() {
       <ChakraProvider>
         <div className="App" id={load ? "no-scroll" : "scroll"}>
           <Preloader load={load} />
-          {/* <ParticleBackground /> */}
+          <ParticleBackground />
           <NavBar />
           <Route exact path="/header" component={Header} />
           <div>

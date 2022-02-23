@@ -3,9 +3,6 @@
   "homepage": "http://rsolov23.github.io/react-new-portfolio",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "^14.16.1"
-  },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",
     "@chakra-ui/react": "^1.7.4",
