@@ -1,5 +1,5 @@
 import { ButtonGroup, IconButton } from "@chakra-ui/react";
-import * as React from "react";
+import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 export const SocialMediaLinks = (props) => (
