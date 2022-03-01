@@ -31,12 +31,7 @@ function NavBar() {
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <Flex>
-            <chakra.a
-              href="/header"
-              title="Nav"
-              display="flex"
-              alignItems="center"
-            >
+            <chakra.a href="/" title="Nav" display="flex" alignItems="center">
               <VisuallyHidden>&lt; Rachel Solov /&gt;</VisuallyHidden>
             </chakra.a>
             <chakra.a
@@ -44,7 +39,7 @@ function NavBar() {
               fontWeight="medium"
               ml="2"
               id="logo"
-              href="/header"
+              href="/"
             >
               &lt; Rachel Solov /&gt;
             </chakra.a>
