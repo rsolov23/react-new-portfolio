@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { ChakraProvider } from "@chakra-ui/react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import ParticleBackground from "./pages/Background";
@@ -24,21 +23,19 @@ function App() {
   }, []);
   return (
     <Router>
-      <ChakraProvider>
-        <div className="App" id={load ? "no-scroll" : "scroll"}>
-          <Preloader load={load} />
-          <ParticleBackground />
-          <NavBar />
-          <Route exact path="/header" component={Header} />
-          <div>
-            <Route exact path="/about" component={About} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/resume" component={Resume} />
-            <Route exact path="/contact" component={Contact} />
-          </div>
-          <Footer />
-        </div>
-      </ChakraProvider>
+      <Preloader load={load} />
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <ParticleBackground />
+        <NavBar />
+        <Route exact path="/" component={Header} />
+        <Switch>
+          <Route exact path="/about" component={About} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/resume" component={Resume} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
+        <Footer />
+      </div>
     </Router>
   );
 }
