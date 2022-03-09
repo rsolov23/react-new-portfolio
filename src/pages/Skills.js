@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import { Box, Flex, chakra, Text } from "@chakra-ui/react";
+import { Box, Flex, chakra } from "@chakra-ui/react";
 
 export default function Skills() {
   return (
