@@ -26,10 +26,11 @@ function Github() {
       <Flex display="flex" justifyContent="space-evenly">
         <GitHubCalendar
           username="rsolov23"
-          blockSize={15}
-          blockMargin={5}
+          year={new Date().getFullYear()}
+          // blockSize={15}
+          // blockMargin={5}
           //   theme={colorTheme}
-          fontSize={16}
+          // fontSize={16}
         />
       </Flex>
     </Box>
