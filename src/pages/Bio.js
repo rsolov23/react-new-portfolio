@@ -31,10 +31,12 @@ export default function Bio() {
           </Text>
         </Heading>
         <Text color={"gray.500"} maxW={"3xl"}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
+        I am a Full Stack Web Developer enjoying life in Cedar Park, Texas. In
+          my free time I enjoy going to concerts and exploring the outdoors with
+          my two dogs Apollo and Hercules. My new love/obsession with coding has
+          changed my life. I am fulfilled in my journey of learning something
+          new each day. Currently a Teaching Assistant for a Full Stack Coding
+          Bootcamp looking to break into a career in Web Development.
         </Text>
         <Stack w={"full"} align={"center"}>
           <Image alt={"avatar"} objectFit={"fill"} src={avatar} />
